@@ -12,6 +12,9 @@ nvm alias default stable
 # Install grunt command line tool - http://gruntjs.com
 npm install -g grunt-cli
 
+# Install browser-sync - https://www.browsersync.io
+npm install -g browser-sync
+
 # Install Bower package manager - http://bower.io/#install-bower
 npm install -g bower
 

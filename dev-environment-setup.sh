@@ -38,7 +38,32 @@ sudo chown -R `whoami` /usr/local/lib/node_modules
 #Install grunt
 npm install -g grunt-cli
 
-#Install browser sync
-npm install -g browser-sync
-
 echo "Dev environment ready!"
+
+# Additional apps:
+# Atom
+# Sublime Text 3
+# Sourcetree
+# Limechat
+# Chrome
+# Firefox Developer edition
+# Firefox
+# Squidman
+# Slack
+# Spotify
+# Cyberduck
+# Evernote
+# Audacity
+# Dropbox
+# Microsoft Remote Desktop
+# SDFormatter
+# RPi-sd card builder
+# Transmission
+# TeamViewer
+
+
+#Appstore Apps
+# Xcode
+# Pixelmator
+# Quickcast
+# The Unarchiver

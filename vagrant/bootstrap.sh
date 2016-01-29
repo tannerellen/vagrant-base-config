@@ -20,6 +20,10 @@ echo "Installing CloudFoundry CLI"
 curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
 mv cf /usr/local/bin
 
+echo "Installing let's encrypt ssl library..."
+#Install let's encrypt so we can use free ssl: https://letsencrypt.readthedocs.org/en/latest/
+git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
+
 echo "Moving nginx config files into place…"
 rm /etc/nginx/sites-enabled/default
 cp /vagrant/vagrant/nginx/default.conf /etc/nginx/sites-enabled/
