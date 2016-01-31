@@ -50,8 +50,9 @@ Enable ssh connections for kiln:
 Run the following commands in the terminal:
 ssh-keygen -t rsa
 at the prompt do not enter anything for file and password, just press enter
-
+```
 cat ~/.ssh/id_rsa.pub
+```
 
 copy the output to the clipboard starting with ssh-rsa
 
@@ -62,8 +63,10 @@ Read more here: http://help.fogcreek.com/8153/using-kiln-with-ssh
 https://nodejs.org/en/
 
 Run these two commands in the terminal to fix npm permissions:
+```
 sudo chown -R `whoami` ~/.npm
 sudo chown -R `whoami` /usr/local/lib/node_modules
+```
 
 **VirtualBox:**
 https://www.virtualbox.org/wiki/Downloads
@@ -73,9 +76,11 @@ https://www.vagrantup.com/downloads.html
 
 **Vagrant plugins:**
 Run these commands in the terminal:
+```
 vagrant plugin install vagrant-ghost
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-fsnotify
+```
 
 **SourceTree:**
 https://www.sourcetreeapp.com
