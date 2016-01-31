@@ -5,11 +5,9 @@ Starting point for working with vagrant boxes. Inlcudes nodejs, nginx, php5, git
 Core Dev Software
 =======================
 
-**Open terminal:**
-Switch default theme and new window theme to “Homebrew” in preferences (so you can be cool)
-
 Download and install the following applications
 ------------
+
 **VirtualBox:**
 https://www.virtualbox.org/wiki/Downloads
 
@@ -31,14 +29,13 @@ http://quickcast.io
 **git:**
 http://git-scm.com/download/mac
 
-**nodeJS(stable):**
+**nodeJS (stable version is preferred):**
 https://nodejs.org/en/
-
-**Xcode:**
-https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 
 Configuration and cleanup using the terminal
 ------------
+**Launch Terminal app:**
+Switch default theme and new window theme to “Homebrew” in preferences (so you can be cool)
 
 **Create a global git ignore file:**
 ```
@@ -104,8 +101,11 @@ vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-fsnotify
 ```
 
-Preferred Software
+Recommended Software
 =======================
+
+The following applications are recommended but alternatives may be used
+------------
 
 **Atom:**
 https://atom.io
@@ -128,17 +128,23 @@ https://www.mozilla.org/en-US/firefox/developer/
 **Cyberduck:**
 https://cyberduck.io
 
+**Pixelmator:**
+http://www.pixelmator.com/mac/
+
 **Microsoft Remote Desktop:**
 https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12
 
 **Dropbox:**
 https://www.dropbox.com/downloading?src=index
 
+**Xcode:**
+https://itunes.apple.com/us/app/xcode/id497799835?mt=12
+
 Software I Like
 =======================
 
-**Pixelmator:**
-http://www.pixelmator.com/mac/
+The following applications may be useful or fun
+------------
 
 **Evernote:**
 https://evernote.com
@@ -160,6 +166,9 @@ http://unarchiver.c3.cx/unarchiver
 
 Hobby Apps
 =======================
+
+The following applications are not used for work
+------------
 
 **Audacity:**
 http://www.audacityteam.org/download/mac
