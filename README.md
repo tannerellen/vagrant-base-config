@@ -10,15 +10,42 @@ Switch default theme and new window theme to “Homebrew” in preferences (so y
 
 Download and install the following applications
 ------------
+**VirtualBox:**
+https://www.virtualbox.org/wiki/Downloads
+
+**Vagrant:**
+https://www.vagrantup.com/downloads.html
+
+**SourceTree:**
+https://www.sourcetreeapp.com
+
+**Squidman (proxy server):**
+http://squidman.net/squidman/
+
+**Slack:**
+http://squidman.net/squidman/
+
+**Quickcast:**
+http://quickcast.io
 
 **git:**
 http://git-scm.com/download/mac
 
-Create a global git ignore file - run commands in terminal:
-git config --global core.excludesfile ~/.gitignore_global
+**nodeJS(stable):**
+https://nodejs.org/en/
 
+**Xcode:**
+https://itunes.apple.com/us/app/xcode/id497799835?mt=12
+
+Configuration and cleanup using the terminal
+------------
+
+**Create a global git ignore file:**
+```
+git config --global core.excludesfile ~/.gitignore_global
 touch ~/.gitignore_global
 nano ~/.gitignore_global
+```
 
 Then paste the following:
 ```
@@ -39,63 +66,43 @@ Thumbs.db
 ## End ignore list ##
 ```
 
-press ctl x to exit, then “y” to save and enter to confirm.
+press "ctl" + "x" to exit, then “y” to save and "enter" to confirm.
 
-Add user email and name to git config file. In terminal:
+**Add user email and name to git config file:**
+```
 nano ~/.gitconfig
+```
 
-then fill in name and email. when done ctrl x to exit, then “y” to save and enter to confirm.
+Fill in name and email. When done "ctrl" + "x" to exit, then “y” to save and "enter" to confirm.
 
-Enable ssh connections for kiln:
-Run the following commands in the terminal:
+**Enable ssh connections for kiln:**
+```
 ssh-keygen -t rsa
-at the prompt do not enter anything for file and password, just press enter
+```
+
+At the prompt do not enter anything for file and password, just press "enter"
+
 ```
 cat ~/.ssh/id_rsa.pub
 ```
 
-copy the output to the clipboard starting with ssh-rsa
+Copy the output to the clipboard starting with "ssh-rsa".
 
 Now navigate to kiln, click your profile and add the ssh key.
 Read more here: http://help.fogcreek.com/8153/using-kiln-with-ssh
 
-**nodeJS(stable):**
-https://nodejs.org/en/
-
-Run these two commands in the terminal to fix npm permissions:
+**Fix npm permissions:**
 ```
 sudo chown -R `whoami` ~/.npm
 sudo chown -R `whoami` /usr/local/lib/node_modules
 ```
 
-**VirtualBox:**
-https://www.virtualbox.org/wiki/Downloads
-
-**Vagrant:**
-https://www.vagrantup.com/downloads.html
-
 **Vagrant plugins:**
-Run these commands in the terminal:
 ```
 vagrant plugin install vagrant-ghost
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-fsnotify
 ```
-
-**SourceTree:**
-https://www.sourcetreeapp.com
-
-**Squidman (proxy server):**
-http://squidman.net/squidman/
-
-**Slack:**
-http://squidman.net/squidman/
-
-**Quickcast:**
-http://quickcast.io
-
-**Xcode:**
-https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 
 Preferred Software
 =======================
