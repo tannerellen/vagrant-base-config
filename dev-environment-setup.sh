@@ -6,7 +6,7 @@ echo "Installing dev environment"
 
 echo "Installing VirtualBox"
 #Install virtualbox
-curl -O 'http://download.virtualbox.org/virtualbox/5.0.12/VirtualBox-5.0.12-104815-OSX.dmg'
+curl -O 'http://download.virtualbox.org/virtualbox/5.0.14/VirtualBox-5.0.14-105127-OSX.dmg'
 hdiutil attach ~/VirtualBox-5.0.12-104815-OSX.dmg
 sudo installer -pkg /Volumes/VirtualBox/VirtualBox.pkg -target /
 hdiutil detach ~/VirtualBox-5.0.12-104815-OSX.dmg
@@ -27,25 +27,25 @@ vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-fsnotify
 
 echo "Installing nodejs"
-#Download and install node js package - This file could be old by the time this is run so double check version
-curl -O 'https://nodejs.org/dist/v5.3.0/node-v5.3.0.pkg'
-sudo installer -pkg ~/node-v5.3.0.pkg -target /
-rm ~/node-v5.3.0.pkg
+# Download and install node js package - This file could be old by the time this is run so double check version
+curl -O 'https://nodejs.org/dist/v5.5.0/node-v5.5.0.pkg'
+sudo installer -pkg ~/node-v5.5.0.pkg -target /
+rm ~/node-v5.5.0.pkg
 # Fix permissions issues with package install of nodejs / npm
 sudo chown -R `whoami` ~/.npm
 sudo chown -R `whoami` /usr/local/lib/node_modules
 
-#Install grunt
+# Install grunt
 npm install -g grunt-cli
 
 echo "Dev environment ready!"
 
 # Additional apps:
-# Atom
-# Sublime Text 3
-# Sourcetree
+# Atom - Packages: git-plus, jshint, prime-file-icons, sync-settings - Themes: One Dark, Afterglow Monokai
+# Sublime Text 3 - Packages: JSHint Gutter - Themes: Afterglow-Monokai
+# Sourcetree - Use ssh with kiln: http://help.fogcreek.com/8153/using-kiln-with-ssh
 # Limechat
-# Chrome
+# Google Chrome
 # Firefox Developer edition
 # Firefox
 # Squidman
@@ -56,14 +56,26 @@ echo "Dev environment ready!"
 # Audacity
 # Dropbox
 # Microsoft Remote Desktop
-# SDFormatter
-# RPi-sd card builder
-# Transmission
 # TeamViewer
+# FileMaker Pro 14 Advanced
+# VLC
+# GenyMotion to test websites on android
 
 
-#Appstore Apps
+# Appstore Apps:
 # Xcode
 # Pixelmator
 # Quickcast
 # The Unarchiver
+# Pages
+# Numbers
+# Keynote
+# iMovie
+# Garage Band
+# Wifi Scanner
+
+# Hobby Apps:
+# Transmission
+# ECM
+# SDFormatter
+# RPi-sd card builder
