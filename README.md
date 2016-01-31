@@ -109,6 +109,7 @@ The following applications are recommended but alternatives may be used
 
 **Atom:**
 https://atom.io
+
 Packages:
 git-plus,
 jshint,
