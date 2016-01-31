@@ -35,8 +35,8 @@ rm ~/node-v5.5.0.pkg
 sudo chown -R `whoami` ~/.npm
 sudo chown -R `whoami` /usr/local/lib/node_modules
 
-# Install grunt
-npm install -g grunt-cli
+# Install gulp
+npm install -g gulp-cli
 
 echo "Dev environment ready!"
 
