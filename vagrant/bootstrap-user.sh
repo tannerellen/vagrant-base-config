@@ -15,9 +15,6 @@ npm install -g grunt-cli
 # Install browser-sync - https://www.browsersync.io
 npm install -g browser-sync
 
-# Install Bower package manager - http://bower.io/#install-bower
-npm install -g bower
-
 # Install mocha unit test framework - ttps://mochajs.org
 npm install -g mocha
 
