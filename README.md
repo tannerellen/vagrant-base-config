@@ -102,6 +102,7 @@ vagrant plugin install vagrant-fsnotify
 ```
 
 **How to start vagrant:**
+
 Navigate to your project repo, then navigate to the vagrant folder within that. Then run the command vagrant up...
 ```
 cd yourproject/vagrant
