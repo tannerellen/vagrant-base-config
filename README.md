@@ -101,6 +101,14 @@ vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-fsnotify
 ```
 
+**How to start vagrant:**
+Navigate to your project repo, then navigate to the vagrant folder within that. Then run the command vagrant up...
+```
+cd yourproject/vagrant
+vagrant up
+```
+This may take several minutes as it will download the base image and install everything. This will only take this long the first time.
+
 Recommended Software
 =======================
 
