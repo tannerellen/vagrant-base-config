@@ -117,6 +117,11 @@ cd /vagrant
 grunt ssl:YourEmail:YourDomain
 ```
 
+Once complete you can exit out of your vagrant ssh session by executing the command
+```shell
+exit
+```
+
 Recommended Software
 =======================
 
