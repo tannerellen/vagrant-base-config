@@ -96,7 +96,7 @@ sudo chown -R `whoami` /usr/local/lib/node_modules
 
 **Vagrant plugins:**
 ```shell
-vagrant plugin install vagrant-ghost
+vagrant plugin install vagrant-hostsupdater
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-fsnotify
 ```

@@ -96,7 +96,7 @@ f
           options: {
             process: function (content, srcpath) {
               var jsonString = "{\"history\": [{\"version\": \"" +  grunt.config.get('pkg.version') + "\", \"changes\": \"Update\"}]}";
-             
+
               return jsonString;
             }
           }
@@ -218,7 +218,7 @@ f
         'app/app-translations.js',
 
         'app/core/core-module.js',
-        
+
         'app/common/common-module.js',
         'app/common/common-services.js',
         'app/common/common-directives.js',
@@ -279,7 +279,7 @@ f
         'app/sources/source-definitions/salesforce.js',
 
         'dist/app.templates.js'
-    		
+
     		],
     		// the location of the resulting JS file
     		dest: 'dist/<%= pkg.name %>.js'
@@ -310,7 +310,7 @@ f
     		'css/edit.css',
         'css/activation.css',
         'css/settings.css',
- 			  
+
         // 'css/**/*.css'
     		],
     		// the location of the resulting JS file
@@ -384,7 +384,7 @@ f
       },
       shell: {
         afDeploy: {
-          // Your command may vary in terms of what directory 
+          // Your command may vary in terms of what directory
           // you run this in. For example,
           // my build script builds everything into /dist
           command: 'cd updates; af login --email <%= af.username %> --passwd <%= af.password %>; af update dayback-downloads;',
@@ -394,7 +394,7 @@ f
         }
       },
 	});
-	
+
 
 	//Load our tasks
 	grunt.loadNpmTasks('grunt-contrib-copy');
@@ -406,7 +406,7 @@ f
   grunt.loadNpmTasks('grunt-ngmin');
   grunt.loadNpmTasks('js-obfuscator');
   grunt.loadNpmTasks('grunt-shell');
-	
+
 	// the default task can be run just by typing "grunt" on the command line
 	grunt.registerTask('default', ['clean:build', 'ngtemplates', 'jsObfuscate', 'copy:main', 'concat:fullcalendar', 'concat:js', 'concat:css', 'copy:removeDebug', 'cssmin', 'ngmin', 'clean:templates', 'uglify', 'copy:addVersionNumbers', 'copy:fixCSSPaths']);
 
@@ -419,12 +419,12 @@ f
     grunt.config.set('af.path', 'updates/<%= pkg.name %>/<%= pkg.version %>-' + stringToHash(grunt.config.get('pkg.version')));
 
     var tasks = ['clean:build', 'ngtemplates', 'copy:testflight', 'copy:main', 'concat:fullcalendar', 'concat:js', 'concat:css', 'copy:removeDebug', 'clean:templates', 'copy:addVersionNumbers', 'copy:fixCSSPaths', 'copy:replaceWithTestURLs', 'copy:production', 'copy:updateLatest'];
-    
+
     // Run tasks
     grunt.task.run(tasks);
-  
+
   });
-  
+
   grunt.registerTask('testURLs', ['copy:replaceWithTestURLs']);
 
   grunt.registerTask('debug', ['clean:build', 'ngtemplates', 'jsObfuscate', 'copy:main', 'concat:fullcalendar', 'concat:js', 'concat:css', 'copy:removeDebug', 'clean:templates', 'copy:addVersionNumbers', 'copy:fixCSSPaths']);
@@ -434,7 +434,7 @@ f
   grunt.registerTask('obfuscate', ['clean:build', 'jsObfuscate']);
 
   grunt.registerTask('production', function(username, password) {
-    // You can go as elaborate as you want on 
+    // You can go as elaborate as you want on
     // the argument fallbacks,
     // for the sake of this ProTip, I'm just using 'arguments'
 
